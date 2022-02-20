@@ -48,8 +48,8 @@ class Preprocessor:
             return self.useful_data
         except Exception as e:
             self.logger_object.log(self.file_object,
-                                   'Exception occured in remove_columns method of the Preprocessor class. Exception message:  ' + str(e))
-            self.logger_object.log(self.file_object,'Column removal Unsuccessful. Exited the remove_columns method of the Preprocessor class')
+                                   'Exception occured in removing_columns method of the Preprocessor class. Exception message:  ' + str(e))
+            self.logger_object.log(self.file_object,'Column removal Unsuccessful. Exited the removing_columns method of the Preprocessor class')
             raise Exception()
 
     def separate_label_feature(self, data, label_column_name):
